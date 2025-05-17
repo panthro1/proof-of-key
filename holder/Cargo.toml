@@ -1,0 +1,15 @@
+[package]
+name = "holder"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+crypto   = { path = "../crypto" }     # internal crate we wrote
+base64   = "0.22"
+serde    = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"                         # ← NEW
+clap     = { version = "4.5", features = ["derive"] }
+uuid     = { version = "1.7", features = ["v4"] }
+dirs     = "5.0"
+anyhow   = "1.0"
+ed25519-dalek = { version = "2.1", default-features = false }  # ← NEW

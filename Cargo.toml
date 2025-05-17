@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "verifier",
+    "holder", "crypto",
+]
+resolver = "2"
+
+[workspace.dependencies]
+ed25519-dalek = { version = "2.1", features = ["rand_core"] }
+rand          = "0.8"
+thiserror     = "1.0"
